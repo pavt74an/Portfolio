@@ -1,0 +1,21 @@
+.menu {
+	width: 100%;
+	display: flex;
+	/* justify-content: space-between; */
+    list-style: none;
+    padding: 2rem 3rem;
+    font-size: 1.25rem;
+}
+
+.menu ul {
+    list-style: none;
+	display: flex;
+	gap: 1.25rem;
+    text-decoration: none;
+}
+
+.menu ul li a, .menu li a{
+    text-decoration: none;
+}
+
+

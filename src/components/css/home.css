@@ -1,0 +1,35 @@
+.layout-container-home {
+	width: 100%;
+	height: 100vh;
+}
+.content-home {
+	width: 100%;
+}
+
+.content-home .sec1 {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+    padding: 0 6rem;
+}
+.content-home .sec1 h1:first-child {
+	margin-top: 5.5rem;
+}
+.content-home .sec1 h1 {
+	font-size: 4rem;
+	line-height: 4rem;
+}
+
+.content-home .sec1 p {
+	font-size: 1.3rem;
+	margin-top: 1.5rem;
+    text-align: center;
+}
+
+.btn-to-portfolio{
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #333;
+}

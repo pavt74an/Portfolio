@@ -1,0 +1,29 @@
+.content-About{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+}
+.sec-left{
+    width: 50%;
+}
+
+.content-About{
+    padding: 0 3rem;
+}
+
+.sec-left div{
+    margin-top: 1rem;
+}
+
+.sec-left .myFname{
+margin-top: 3rem;
+}
+.sec-left .myFname,.sec-left .myLname{
+font-size: 3.5rem;
+
+}
+
+.about-text{
+    margin: 1rem;
+    font-size: 1.5rem;
+}
