@@ -4,7 +4,7 @@ import './css/skills.css';  // Make sure this path matches where you save the CS
 const SkillItem = ({ icon, name }) => (
   <div className="skill-item">
     <img
-      src={`/src/asset/${icon}`}
+       src={`/assets/${icon}`} 
       alt={name}
       title={name}
       className="skill-icon fade-in"
