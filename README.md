@@ -1,12 +1,24 @@
-<<<<<<< HEAD
-# Personal-project
-=======
-# React + Vite
+# 74an | Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
+**74an | Portfolio** is a personal portfolio website that showcases my projects, skills, and experiences. The website is designed to be an interactive and responsive platform for potential employers and collaborators to explore my work. The backend is deployed using Render, while the database is hosted on MongoDB Atlas.
 
-Currently, two official plugins are available:
+## Project Details
+- **Project Name:** 74an | Portfolio
+- **Project Description:** A personal portfolio website showcasing my projects, skills, and experiences.
+- **Start Date:** January 15, 2025
+- **End Date:** January 30, 2025
+- **Project Status:** Completed
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
->>>>>>> 748acda (setup project)
+## Technologies Used
+- **Frontend:** React.js
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB (MongoDB Atlas)
+- **Deployment:** Render (Backend)
+
+
+## Links
+- **Frontend Repository:** [GitHub](https://github.com/pavt74an/Portfolio.git)
+- **Backend Repository:** [GitHub](https://github.com/pavt74an/portfolio-bn.git)
+
+
