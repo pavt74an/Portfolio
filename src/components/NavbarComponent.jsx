@@ -1,31 +1,65 @@
+// Navbar.jsx
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 import "./css/navbar.css";
+import ContactCom from "./ContactCom";
+import logo from "../asset/74an.png";
 
 function Navbar() {
-	return (
-		<>
-			<nav className="menu">
-				<li>
-					<img src="" alt="" />
-					logo
-				</li>
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-				<ul>
+	const toggleMenu = () => {
+		setIsMenuOpen(!isMenuOpen);
+	};
+
+	return (
+		<nav className="menu">
+			<NavLink className="logo" to="/">
+				<img src={logo} alt="" />
+			</ NavLink>
+
+			<div className="hamburger" onClick={toggleMenu}>
+				<span className={`bar ${isMenuOpen ? "active" : ""}`}></span>
+				<span className={`bar ${isMenuOpen ? "active" : ""}`}></span>
+				<span className={`bar ${isMenuOpen ? "active" : ""}`}></span>
+			</div>
+
+			<div className={`nav-container ${isMenuOpen ? "active" : ""}`}>
+				<ul className="nav-links">
 					<li>
-						<NavLink to="/">Home</NavLink>
+						<NavLink
+							to="/"
+							className={({ isActive }) => (isActive ? "active" : "")}
+							onClick={() => setIsMenuOpen(false)}
+						>
+							Home
+						</NavLink>
 					</li>
 					<li>
-						<NavLink to="/portfolio">Portfolio</NavLink>
+						<NavLink
+							to="/portfolio"
+							className={({ isActive }) => (isActive ? "active" : "")}
+							onClick={() => setIsMenuOpen(false)}
+						>
+							Portfolio
+						</NavLink>
 					</li>
 					<li>
-						<NavLink to="/about">About</NavLink>
+						<NavLink
+							to="/about"
+							className={({ isActive }) => (isActive ? "active" : "")}
+							onClick={() => setIsMenuOpen(false)}
+						>
+							About
+						</NavLink>
 					</li>
 				</ul>
-				<li className="contact-btn">
-					<NavLink to="/contact">Contact</NavLink>
-				</li>
-			</nav>
-		</>
+
+				<div className="contact-btn-nav">
+					<ContactCom />
+				</div>
+			</div>
+		</nav>
 	);
 }
 

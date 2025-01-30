@@ -1,0 +1,256 @@
+:root {
+	--color-light: #efecec;
+	--color-pink: #ffb0b0;
+	--color-orange: #fc6736;
+	--color-navy: #0c2d57;
+	--color-light-green: #90ee90;
+	--color-github: #333;
+	--card-shadow: 0 4px 6px rgba(12, 45, 87, 0.1);
+	--card-shadow-hover: 0 8px 16px rgba(12, 45, 87, 0.15);
+	--transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-container {
+	min-height: 100vh;
+	background: var(--color-light);
+	padding-bottom: 4rem;
+}
+
+.portfolio-content {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.portfolio-header {
+	text-align: center;
+	margin-bottom: 4rem;
+	animation: fadeInDown 0.8s ease-out;
+}
+
+.portfolio-header h1 {
+	font-size: 3rem;
+	font-weight: 800;
+	color: var(--color-navy);
+	margin-bottom: 1.5rem;
+	letter-spacing: -0.02em;
+}
+
+.portfolio-header p {
+	color: var(--color-navy);
+	opacity: 0.9;
+	max-width: 600px;
+	margin: 0 auto;
+	font-size: 1.1rem;
+	line-height: 1.6;
+}
+
+.projects-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	gap: 2.5rem;
+	animation: fadeInUp 1s ease-out;
+}
+
+.project-card {
+	background: white;
+	border-radius: 1.25rem;
+	padding: 2.5rem;
+	box-shadow: var(--card-shadow);
+	transition: var(--transition-smooth);
+	border: 1px solid rgba(12, 45, 87, 0.08);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+
+	.project-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 8px 12px rgba(12, 45, 87, 0.15);
+		border-color: var(--color-orange);
+	}
+
+	.project-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom: 1rem;
+	}
+
+	.project-title {
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: var(--color-navy);
+		margin-bottom: 0.5rem;
+		flex: 1;
+		margin-right: 1rem;
+	}
+
+	.project-status {
+		padding: 0.5rem 1rem;
+		border-radius: 9999px;
+		font-size: 0.875rem;
+		font-weight: 500;
+		text-transform: capitalize;
+		white-space: nowrap;
+	}
+
+	.project-status.completed {
+		background-color: var(--color-light-green);
+		color: #1a472a;
+	}
+
+	.project-status.on_process {
+		background-color: var(--color-pink);
+		color: var(--color-navy);
+	}
+
+	.project-date {
+		display: flex;
+		align-items: center;
+		color: var(--color-navy);
+		opacity: 0.7;
+		font-size: 0.875rem;
+		margin-bottom: 1rem;
+	}
+
+	.date-icon {
+		width: 1rem;
+		height: 1rem;
+		margin-right: 0.5rem;
+	}
+
+ 
+	.project-description {
+		color: var(--color-navy);
+		opacity: 0.8;
+		margin-bottom: 1.5rem;
+		line-height: 1.6;
+	}
+
+	.tools-section {
+		margin-bottom: 1.5rem;
+	}
+
+	.tools-section h3 {
+		font-weight: 600;
+		color: var(--color-navy);
+		margin-bottom: 0.75rem;
+	}
+
+	.tools-container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+
+	.tool-tag {
+		border:2px solid  var(--color-pink);
+		color: var(--color-navy);
+		padding: 0.5rem 1rem;
+		border-radius: 9999px;
+		font-size: 0.875rem;
+		font-weight: 500;
+		transition: all 0.2s ease;
+	}
+
+	.tool-tag:hover {
+		background-color: var(--color-orange);
+		color: white;
+	}
+
+	.project-links {
+        width: 100%;
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+        justify-content: end;
+        align-items: end;
+		
+  
+       
+	}
+
+	.project-link {
+		display: flex;
+		align-items: center;
+		padding: 0.75rem 1.5rem;
+		border-radius: 0.5rem;
+		font-weight: 500;
+		transition: all 0.2s ease;
+		text-decoration: none;
+		background-color: var(--color-navy);
+		color: white;
+      
+	}
+
+	.project-link:hover {
+		transform: scale(1.05);
+		background-color: var(--color-orange);
+	}
+
+	.link-icon {
+		width: 1.25rem;
+		height: 1.25rem;
+		margin-right: 0.5rem;
+	}
+	.text-link {
+		color: var(--color-light);
+	}
+
+	.loading-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 50vh;
+	}
+
+	.loading-spinner {
+		width: 3rem;
+		height: 3rem;
+		border: 3px solid var(--color-pink);
+		border-top-color: var(--color-orange);
+		border-radius: 50%;
+		animation: spin 1s linear infinite;
+		margin-bottom: 1rem;
+	}
+
+	.error-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 50vh;
+	}
+
+	.error-message {
+		background-color: var(--color-pink);
+		color: var(--color-navy);
+		padding: 1rem 2rem;
+		border-radius: 0.5rem;
+		border: 1px solid var(--color-orange);
+	}
+
+	@keyframes spin {
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	@media (max-width: 768px) {
+		.portfolio-content {
+			padding: 1rem;
+		}
+
+		.projects-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.portfolio-header h1 {
+			font-size: 2rem;
+		}
+
+		.project-card {
+			padding: 1.5rem;
+		}
+	}
+}
