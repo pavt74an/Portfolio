@@ -55,7 +55,7 @@ const SkillsComponent = () => {
     learning: [
       { icon: "nestjs.png", name: "Nest.js" },
       { icon: "go.png", name: "Go" },
-      { icon: "jenkins-logo.jpg", name: "Jenkins" },
+      { icon: "JenkinsLogo.jpg", name: "Jenkins" },
     ],
   };
 
