@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import "./css/navbar.css";
 import ContactCom from "./ContactCom";
-import logo from "../asset/74an.png";
+import logo from "../../public/asset/74an.png";
 
 function Navbar() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);

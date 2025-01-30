@@ -1,7 +1,7 @@
 import Navbar from "./NavbarComponent";
 import { NavLink } from "react-router-dom";
 import "./css/aboutme.css";
-import mepics from "../asset/me.jpg";
+import mepics from "../../public/asset/me.jpg";
 import SkillsComponent from "./SkillsComponent";
 
 function AboutComponent() {

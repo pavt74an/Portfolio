@@ -40,11 +40,11 @@ const Portfolio = () => {
 		switch (linkType) {
 			case "GitHub_frontend":
 			case "GitHub_Backend":
-				return <Github className="link-icon" color="#ffffff" />; // GitHub's brand color
+				return <Github className="link-icon" color="#ffffff" />; 
 			case "website":
-				return <ExternalLink className="link-icon" color="#ffffff" />; // Blue color for website links
+				return <ExternalLink className="link-icon" color="#ffffff" />; 
 			default:
-				return <ExternalLink className="link-icon" color="#ffffff" />; // Default grey color
+				return <ExternalLink className="link-icon" color="#ffffff" />; 
 		}
 	};
 

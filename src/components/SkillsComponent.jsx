@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/skills.css';  // Make sure this path matches where you save the CSS file
+import './css/skills.css'; 
 
 const SkillItem = ({ icon, name }) => (
   <div className="skill-item">
