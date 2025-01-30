@@ -4,7 +4,7 @@ import './css/skills.css';
 const SkillItem = ({ icon, name }) => (
   <div className="skill-item">
     <img
-       src={`/assets/${icon}`} 
+       src={`../../public/asset//${icon}`} 
       alt={name}
       title={name}
       className="skill-icon fade-in"
