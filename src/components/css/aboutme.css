@@ -1,29 +1,218 @@
-.content-About{
+.content-About {
     width: 100%;
+    height: calc(100vh - 60px); 
     display: flex;
+    gap: 4rem;
+    padding: 2rem 5rem 0rem 5rem;
+    background-color: var(--color-light);
+}
+
+.sec-left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
 }
-.sec-left{
-    width: 50%;
+
+.about-title {
+    font-size: 2rem;
+    color: var(--color-navy);
+    position: relative;
+    /* margin-bottom: rem; */
 }
 
-.content-About{
-    padding: 0 3rem;
+.about-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: var(--color-orange);
+    border-radius: 2px;
 }
 
-.sec-left div{
+.name-container {
+    margin-top: 2rem;
+}
+
+.myFname, .myLname {
+    font-size: 4.5rem;
+    line-height: 1.1;
+    font-weight: 700;
+    color: var(--color-navy);
+    transition: transform 0.3s ease;
+}
+
+.myFname:hover, .myLname:hover {
+    transform: translateX(20px);
+    color: var(--color-orange);
+}
+
+.about-description {
     margin-top: 1rem;
 }
 
-.sec-left .myFname{
-margin-top: 3rem;
+.about-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1.5rem;
 }
-.sec-left .myFname,.sec-left .myLname{
-font-size: 3.5rem;
 
+.sec-right {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-.about-text{
-    margin: 1rem;
-    font-size: 1.5rem;
+.profile-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--color-pink);
+    margin: 0 auto 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image img{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+}
+
+
+.quick-stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 0rem 0 1rem 0;
+    border-top: 2px solid var(--color-light);
+    border-bottom: 2px solid var(--color-light);
+    margin: 0rem 0 1rem 0;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-orange);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--color-navy);
+}
+
+.social-links {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+
+.contact-btn {
+    padding: 1rem 2rem;
+    background-color: var(--color-orange);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-btn:hover {
+    background-color: var(--color-navy);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons {
+    display: flex;
+    justify-content:space-between;
+    gap: 1.25rem;
+    width: 100%;
+}
+
+.icon {
+    width: 33%;
+    color: var(--color-navy);
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.icon:hover,.icon-svg-ab:hover {
+    color: var(--color-orange);
+}
+.icon-svg-ab{
+    width: 3rem;
+    height: 3rem;
+}
+
+/* skill section */
+.skills-section{
+    width: 100%;
+    padding: 0rem 2.1rem 2rem 2.1rem;
+    background-color: var(--color-light);
+}
+
+@media (max-width: 1024px) {
+    .content-About {
+        height: auto;
+        min-height: calc(100vh - 60px);
+        flex-direction: column;
+        padding: 2rem;
+    }
+    
+    .sec-left, .sec-right {
+        width: 100%;
+    }
+    
+    .myFname, .myLname {
+        font-size: 3.5rem;
+    }
+    
+    .profile-card {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .myFname, .myLname {
+        font-size: 2.5rem;
+    }
+    
+    .about-text {
+        font-size: 1rem;
+    }
+    
+    .contact-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
 }
