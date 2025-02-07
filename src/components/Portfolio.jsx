@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./NavbarComponent";
 import { ExternalLink, Calendar, Github } from "lucide-react";
 import "./css/port.css";
+import LoadingSpinner from "./LoadingSpinner";
 
 const Portfolio = () => {
 	const [projects, setProjects] = useState([]);
@@ -63,32 +64,30 @@ const Portfolio = () => {
 
 	if (loading) {
 		return (
-			<div className="portfolio-container">
-				<div className="navbar-con">
-					<Navbar />
-				</div>
-				<div className="loading-container">
-					<div className="loading-spinner"></div>
-					<p>Loading projects...</p>
-				</div>
+		  <div className="portfolio-container">
+			<div className="navbar-con">
+			  <Navbar />
 			</div>
+			<LoadingSpinner />
+		  </div>
 		);
-	}
-
-	if (error) {
+	  }
+	  
+	  if (error) {
 		return (
-			<div className="portfolio-container">
-				<div className="navbar-con">
-					<Navbar />
-				</div>
-				<div className="error-container">
-					<p className="error-message">Error: {error}</p>
-				</div>
+		  <div className="portfolio-container">
+			<div className="navbar-con">
+			  <Navbar />
 			</div>
+			<div className="error-container">
+			  <p className="error-message">Error: {error}</p>
+			</div>
+		  </div>
 		);
-	}
+	  }
 
 	return (
+
 		<div className="portfolio-container">
 			<div className="navbar-con">
 				<Navbar />
