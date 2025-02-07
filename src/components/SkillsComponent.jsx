@@ -45,7 +45,7 @@ const SkillsComponent = () => {
       { icon: "prisma2244.jpg", name: "Prisma" },
     ],
     tools: [
-      { icon: "git_icon.svg.png", name: "Git" },
+      { icon: "Git_icon.png", name: "Git" },
       { icon: "github.png", name: "GitHub" },
       { icon: "gitlab.jpg", name: "GitLab" },
       { icon: "docker.png", name: "Docker" },
