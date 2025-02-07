@@ -61,18 +61,18 @@ const Portfolio = () => {
 				return "View Project";
 		}
 	};
-
 	if (loading) {
 		return (
-		  <div className="portfolio-container">
+		  <div className="portfolio-container min-h-screen">
 			<div className="navbar-con">
 			  <Navbar />
 			</div>
-			<LoadingSpinner />
+			<div className="flex-1">
+			  <LoadingSpinner />
+			</div>
 		  </div>
 		);
 	  }
-	  
 	  if (error) {
 		return (
 		  <div className="portfolio-container">
